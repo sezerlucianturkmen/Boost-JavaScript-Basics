@@ -8,11 +8,21 @@
 </head>
 <body>
     <script>
-        var marka=prompt("marka giriniz");
+        var marka = prompt("Marka giriniz");
         if(marka=='bmw'){
-            console.log('markanız BMW dir');
-
-
+            console.log('markanız bmw\' dir');
+        }else{
+            console.log('markanız bmw değildir');
+        }
+        var model = prompt("Model giriniz");
+        switch (model) {
+            case '320':
+                console.log('modeliniz 320 dir');
+                break;        
+            default:
+                console.log('modeliniz 320 değildir');
+                break;
+        }
     </script>
 </body>
 </html>
