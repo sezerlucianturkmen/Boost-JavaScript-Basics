@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arabalar=["BMW","Mercedes","Volvo", "Audi","Ford"];
+        console.log(arabalar);
+        let modeller=new Array("320","E200","XC90");
+        // push dizinin sonuna elman ekler
+        arabalar.push("Opel");
+        console.log(arabalar);
+        //unshift dizinini basına elemanlar ekler
+        arabalar.unshift("Renault");
+        console.log(arabalar);
+        //pop dizinini sonundaki elemanı siler
+        // push,pop LIFO
+        var result=arabalar.pop();
+        console.log(arabalar);
+        console.log('pop işleminden dönen sonuc...: ',result);
+        //shift dizinin başından eleman çıkarır. çıakrrdığı elemanı döner
+        result=arabalar.shift();
+        console.log(arabalar);
+        console.log('Shift işleminden dönen sonuç...: ',result);
+        // Sort dizileri sıralar 
+        var sayilar=[5,0,9,1];
+        sayilar.sort();
+        console.log(sayilar);
+        // reverse sıralamadan tüm elemanları tersten aynalar
+        var yenidizi=["ayse","fatma","ali"];
+        console.log(yenidizi);
+        yenidizi.reverse();
+        console.log(yenizdizi);
+        //splice dizinin girilen ilk değerindne son degeriden başlayıp kaç eleman silmek için kullanılır
+       console.log(yenidizi.splice(1,2));
+       //join diziniin elemanları belirtien birleştirme karateri ile birleştirir
+       let code=['3','a','r'];
+       console.log(code);
+       let code2=code.join('');
+       console.log(code2);
+       //for each sonuc yazıdırır dondurmez
+       let arabalar2=["BMW","Mercedes","Volvo", "Audi","Ford"];
+       arabalar2.forEach(araba=>{
+        console.log(araba);
+       });
+       // map sonucta dizi döner
+       
+       var resultmap =arabalar2.map(x=>{
+        console.log(x);
+        if(x.length>4)
+            return x;
+       });
+       // filter 
+       // uzunlugu 1-4 arasında olanları filtreleme
+       console.long(arabalar2);
+       var result =arabalar2.filter(x=> x.length<5);
+       console.log('filter sonucu..: ',result)
+       // elemanlara erisim
+       console.log(arabalar2.findIndex(x=> x=="Volvo"));
+       console.log(arabalar2.indexOf("Volvo"));
+       console.log(arabalar2[2]);
+       console.log(arabalar2.lastIndexOf("Volvo"));
+       // Every 
+
+       // Some
+
+    </script>
+</body>
+</html>

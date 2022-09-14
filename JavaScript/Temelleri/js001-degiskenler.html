@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <button onclick="alert('selam arkadaslar')">Haber var</button>
+<body>
+    <script>
+        console.log("merhaba dünya");
+        var a=10;
+        var b=true;
+        var c="merhaba";
+        var d=3.14;
+        console.log(d); /* değişken yazdırma*/
+        degisken="Merhaba değişken";
+        console.log(degisken);
+        /**
+         * var,
+         * let,
+         * const, java da final gibi bir değer atandıktan sonra degisitirilemez
+         * tek tırnak kullanımı tavsiye edilir best practice de
+        */
+       let degisken2="merhaba degisken 2";
+       console.log(degisken2);
+       degisken2=2;
+       console.log(degisken2);
+
+       const degisken3="merhaba degisken 3";
+       console.log(degisken3);
+       degisken3=3;
+       console.log(degisken3);   
+
+       /* kullanıcan deger girmesini istemek 2 sayı toplamı budur
+       */
+      let sayi1=prompt("1.sayıyı giriniz");
+      let sayi2=prompt("2. sayıyı giriniz");
+      console.log('iki sayinin toplamı...:'+(sayi1+sayi2));
+
+    </script>
+</body>
+</html>
